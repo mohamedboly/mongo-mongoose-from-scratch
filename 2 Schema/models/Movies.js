@@ -13,15 +13,7 @@ const MovieSchema = new mongoose.Schema({
 
 const MovieModel = mongoose.model("Movie", MovieSchema);
 
-const deleteById = async () => {
-  try {
-    const result = await MovieModel.findByIdAndDelete(
-      "67211d54cbba1b7e1d31d9d8"
-    );
+export default MovieModel;
 
-    console.log("result");
-    console.log(result);
-  } catch (error) {}
-};
 
-export { deleteById };
+
